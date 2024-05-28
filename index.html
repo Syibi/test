@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://code.jquery.com">
+  <link rel="dns-prefetch" href="https://code.jquery.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.googleoptimize.com">
+  <link rel="dns-prefetch" href="https://www.googleoptimize.com">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link rel="preconnect" href="https://connect.facebook.net">
+  <link rel="dns-prefetch" href="https://connect.facebook.net">
+  <link rel="preconnect" href="https://www.facebook.com">
+  <link rel="dns-prefetch" href="https://www.facebook.com">
+  <link rel="preconnect" href="https://api.ehealth.co.id">
+  <link rel="dns-prefetch" href="https://api.ehealth.co.id">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords"
+    content="aplikasi klinik, software klinik, rekam medis digital, aplikasi apotek, standar fhir hl7, health level 7">
+  <meta name="description"
+    content="Aplikasi rekam medis digital untuk dokter praktik pribadi, klinik pratama, dan rumah sakit. eHealth.co.id memberikan kemudahan dalam mengatur data rekam medis, apotek, dan rumah sakit dengan harga yang terjangkau. eHealth.co.id menggunakan standar FHIR Health Level 7 (HL7).">
+  <meta name="subject" content="eHealth.co.id">
+  <meta name="copyright" content="PT. Aksara Digital Indonesia">
+  <meta name="language" content="ID">
+  <meta name="robots" content="index,follow">
+  <meta name="Classification" content="Business">
+  <meta name="author" content="Ibrohim Kholilul Islam, ibrohim@ehealth.co.id">
+  <meta name="reply-to" content="info@ehealth.co.id">
+  <meta name="url" content="https://ehealth.co.id">
+  <meta name="identifier-URL" content="https://ehealth.co.id">
+  <meta name="directory" content="submission">
+  <meta name="coverage" content="Worldwide">
+  <meta name="distribution" content="Global">
+  <meta name="rating" content="General">
+  <meta name="revisit-after" content="7 days">
+  <meta name="target" content="all">
+  <meta name="HandheldFriendly" content="True">
+
+  <link rel="canonical" href="https://ehealth.co.id">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "eHealth.co.id",
+      "image": [
+        "https://ehealth.co.id/static/images/home/ImgStart.svg"
+       ],
+      "logo": "https://ehealth.co.id/static/images/Logo-eH.svg",
+      "description": "Aplikasi rekam medis digital untuk dokter praktik pribadi, klinik pratama, dan rumah sakit. eHealth.co.id memberikan kemudahan dalam mengatur data rekam medis, apotek, dan rumah sakit dengan harga yang terjangkau. eHealth.co.id menggunakan standar FHIR Health Level 7 (HL7).",
+      "brand": {
+        "@type": "Brand",
+        "name": "eHealth.co.id"
+      },
+      "manufacturer": {
+        "@type": "Organization",
+        "legalName": "PT. Aksara Digital Indonesia",
+        "email": "info@ehealth.co.id",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Indonesia",
+          "streetAddress": "Wisma Monex Lantai 9, Jalan Asia-Afrika No. 133-137",
+          "postalCode": "40112"
+        }
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://ehealth.co.id/#!contact-us",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "250000",
+          "priceCurrency": "IDR",
+          "name": "Price per practitioner per month",
+          "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": "1",
+              "unitCode": "MON"
+          }
+        },
+        "priceCurrency": "IDR",
+        "priceValidUntil": "2021-12-31",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  </script>
+
+  <title>Software Klinik eHealth.co.id - Terintegrasi SatuSehat</title>
+  <link rel="icon" type="image/png" href="/static/images/favicon.png" />
+
+  <script>
+    /**
+     * @read: https://support.google.com/google-ads/answer/2998031?hl=en
+     */
+    function setGoogleClickId() {
+      const params = (new URL(window.location)).searchParams;
+      const gclidParam = params.get('gclid');
+      const gclsrcParam = params.get('gclsrc');
+      const isGclsrcValid = !gclsrcParam || gclsrcParam.indexOf('aw') !== -1;
+
+      if (gclidParam && isGclsrcValid) {
+        const expiryPeriod = 90 * 24 * 60 * 60 * 1000; // masa berlaku 90 hari dalam milidetik
+        localStorage.setItem('gclid', JSON.stringify({
+          value: gclidParam,
+          expiryDate: new Date().getTime() + expiryPeriod,
+        }));
+      }
+    }
+    function setMicrosoftClickId() {
+      const params = (new URL(window.location)).searchParams;
+      const msclkidParam = params.get('msclkid');
+      if (msclkidParam) {
+        const expiryPeriod = 90 * 24 * 60 * 60 * 1000;
+        localStorage.setItem('msclkid', JSON.stringify({
+          value: msclkidParam,
+          expiryDate: new Date().getTime() + expiryPeriod,
+        }));
+      }
+    }
+    window.onload = function () {
+      console.log("Hi");
+      setGoogleClickId();
+      setMicrosoftClickId();
+    };
+  </script>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NV3CTMW');
+  </script>
+
+  <script async src="https://www.googleoptimize.com/optimize.js?id=OPT-KFR2ZQ6"></script>
+  <link href="static/css/prod.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-985705934"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-985705934');
+  </script>
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+
+<body class="overflow-x-hidden bg-white font-sans">
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV3CTMW" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
+  <!-- Navigation -->
+  <nav class="glassmorphism px-6 md:px-20 lg:px-28 2xl:px-80 py-4 bg-fixed fixed inset-x-0 bg-primary z-20">
+    <div class="flex flex-row items-center justify-between">
+      <a href="/">
+        <img class="w-36 md:w-40" alt="logo eHealth.co.id" src="static/images/Logo-eH.svg">
+      </a>
+      <ul class=" flex-row gap-x-10 hidden md:flex">
+        <li><a class="feature-link text-white font-p-dekstop text-p-mobile hover:text-secondary" href="/fitur/"> Fitur
+          </a></li>
+        <li><a class="pricing-link text-white font-p-desktop text-p-mobile hover:text-secondary" href="/harga/"> Harga
+          </a></li>
+        <li><a class="blog-link text-white font-p-desktop text-p-mobile hover:text-secondary" href="/blog/"> Blog </a>
+        </li>
+        <li><a class="faq-link text-white font-p-desktop text-p-mobile hover:text-secondary" href="/faq/"> FAQ </a></li>
+      </ul>
+      <div
+        class="hidden md:flex py-2 px-8 items-center gap-x-4 bg-gradient-custom rounded-full shadow-md shadow-secondary-bg hover:shadow-lg hover:shadow-secondary-bg">
+        <a href="/mulai-sekarang/" id="register-link"
+          class="font-sans font-p-desktop text-p-desktop text-white register-link">Daftar</a>
+        <img class="w-4" alt="daftar sekarang" src="static/images/arrow.svg">
+      </div>
+      <div id="mobileMenuButton" class="md:hidden flex items-left my-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="#ffffff">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 hidden" fill="none" viewBox="0 0 24 24" stroke="#ffffff">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden text-center mx-auto gap-y-4">
+      <div>
+        <a href="/fitur/"
+          class="feature-link block py-2 px-4 font-p-mobile text-p-mobile text-white hover:text-secondary">Fitur</a>
+        <a href="/harga/"
+          class="pricing-link block py-2 px-4 font-p-mobile text-p-mobile text-white hover:text-secondary">Harga</a>
+        <a href="/blog/"
+          class="blog-link block py-2 px-4 font-p-mobile text-p-mobile text-white hover:text-secondary">Blog</a>
+        <a href="/faq/" class="faq-link block py-2 px-4 font-p-mobile text-p-mobile text-white hover:text-secondary">
+          FAQ </a>
+      </div>
+      <div
+        class="w-fit py-2 px-8 items-center gap-x-4 bg-gradient-custom rounded-full shadow-md shadow-secondary-bg hover:shadow-lg hover:shadow-secondary-bg flex mx-auto">
+        <a href="/mulai-sekarang/" id="reservasi-link"
+          class="font-sans font-p-mobile text-p-mobile text-white reservasi-link">Daftar</a>
+        <img class="w-4" alt="daftar sekarang" src="static/images/arrow.svg">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section
+    class="w-screen pt-20 lg:px-28 md:px-20 2xl:px-80 px-6 bg-primary flex items-center relative overflow-hidden h-fit">
+    <img src="static/images/bg-deco.svg" alt="Hero Section Background Decoration"
+      class="absolute inset-0 w-full h-full object-cover -z-0">
+    <div class="z-10 flex flex-col md:flex-row justify-between">
+      <div class="flex flex-col md:w-1/2 text-center md:text-left gap-y-4 md:py-20 py-10">
+        <h1 class="font-sans text-h1-mobile md:text-h1-desktop font-h1-mobile md:font-h1-desktop text-white md:pt-10">
+          Belum Menemukan Sistem Rekam Medis Elektronik yang Tepat?
+        </h1>
+        <p class="font-sans text-p-mobile md:text-p-desktop text-white md:w-4/5 w-full">
+          Kini saatnya menjalankan klinik lebih mudah & cepat dengan sistem RME sesuai kebutuhan Klinik Anda.
+        </p>
+        <div class="font-sans text-p-mobile md:text-p-desktop text-white w-full flex flex-col">
+          <span class=font-bold>Dipercaya oleh 300+ Faskes</span>
+          <span>4.7/5 Faskes merasa puas</span>
+        </div>
+        <a href="/mulai-sekarang/"
+          class=" w-full md:w-fit px-6 py-2 bg-gradient-custom rounded-full font-sans font-p-hero text-p-mobile md:text-p-desktop text-white text-center shadow-md shadow-secondary-bg hover:shadow-lg hover:shadow-secondary-bg my-4">
+          Konsultasi Sekarang
+        </a>
+      </div>
+      <div class="flex flex-col md:w-1/2 self-end">
+          <img src="static/images/hero-img.png" class="w-full h-fit object-contain" alt="Aplikasi Klinik E-Health">
+      </div>
+    </div>
+  </section>
+
+  <!-- carousel -->
+  <div
+    class="py-6 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+    <ul
+      class="flex items-center justify-center md:justify-start [&_li]:mx-12 [&_img]:max-w-none animate-infinite-scroll">
+      <li>
+        <img src="static/images/klinikUI.svg" alt="Facebook" class="w-14 md:w-20" />
+      </li>
+      <li>
+        <img src="static/images/klinikNamsan.png" alt="Disney" class="w-14 md:w-20" />
+      </li>
+      <li>
+        <img src="static/images/klinikPuspa.png" alt="Airbnb" class="w-14 md:w-20" />
+      </li>
+      <li>
+        <img src="static/images/klinikJsc.png" alt="Apple" class="w-14 md:w-20" />
+      </li>
+      <li>
+        <img src="static/images/klinikHnh.png" alt="Spark" class="w-14 md:w-20" />
+      </li>
+      <li>
+        <img src="static/images/klinikBidandwi.png" alt="Samsung" class="w-14 md:w-20" />
+      </li>
+      <li>
+        <img src="static/images/klinikAgatha.png" alt="Quora" class="w-14 md:w-20" />
+      </li>
+      <li>
+        <img src="static/images/klinikSwifttestid.png" alt="Sass" class="w-14 md:w-20" />
+      </li>
+      <li>
+        <img src="static/images/klinikQita.svg" alt="Sass" class="w-14 md:w-20" />
+      </li>
+    </ul>
+    <ul
+      class="flex items-center justify-center md:justify-start [&_li]:mx-12 [&_img]:max-w-none animate-infinite-scroll"
+      aria-hidden="true">
+      <li>
+        <img src="static/images/klinikUI.svg" alt="Facebook" class="w-14 md:w-20" />
+      </li>
+      <li>
+        <img src="static/images/klinikNamsan.png" alt="Disney" class="w-14 md:w-20" />
+      </li>
+      <li>
+        <img src="static/images/klinikPuspa.png" alt="Airbnb" class="w-14 md:w-20" />
+      </li>
+      <li>
+        <img src="static/images/klinikJsc.png" alt="Apple" class="w-14 md:w-20" />
+      </li>
+      <li>
+        <img src="static/images/klinikHnh.png" alt="Spark" class="w-14 md:w-20" />
+      </li>
+      <li>
+        <img src="static/images/klinikBidandwi.png" alt="Samsung" class="w-14 md:w-20" />
+      </li>
+      <li>
+        <img src="static/images/klinikAgatha.png" alt="Quora" class="w-14 md:w-20" />
+      </li>
+      <li>
+        <img src="static/images/klinikSwifttestid.png" alt="Sass" class="w-14 md:w-20" />
+      </li>
+      <li>
+        <img src="static/images/klinikQita.svg" alt="Sass" class="w-14 md:w-20" />
+      </li>
+    </ul>
+  </div>
+
+  <!-- Benefit Section -->
+  <section class="w-screen lg:px-28 md:px-20 2xl:px-80 px-5 flex items-center relative py-20">
+    <img src="static/images/blob-deco.png" alt="Background Decoration"
+      class="absolute inset-y-0 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -z-0">
+    <div class="z-10">
+      <h2
+        class="font-sans text-h2-mobile lg:text-h2-desktop font-bold text-title text-center md:w-3/5 px-5 mb-10 mx-auto">
+        Kemudahan yang Akan Anda Dapatkan Jika Menggunakan
+        Aplikasi Klinik <span class="text-primary font-sans">eHealth.co.id</span></h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-between gap-y-8 gap-x-8">
+        <div
+          class="item-card bg-white rounded-2xl p-7 gap-y-7 flex flex-col shadow-lg delay-[0ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0"
+          data-taos-offset="100">
+          <div>
+            <img class="w-12 md:w-14" alt="aplikasi mudah digunakan" src="static/images/bf1-icon.svg">
+            <h3 class="font-semibold text-h3-mobile lg:text-h3-desktop my-2 font-sans text-title">
+              Mudah Digunakan
+            </h3>
+            <p class="text-p-mobile md:text-p-desktop text-grey-th font-sans">
+              Aplikasi klinik eHealth.co.id dirancang agar mudah dipahami dan digunakan oleh siapa pun tanpa perlu
+              pelatihan khusus.
+            </p>
+          </div>
+        </div>
+        <div
+          class="item-card bg-white rounded-2xl p-7 gap-y-7 flex flex-col shadow-lg delay-[100ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0"
+          data-taos-offset="100">
+          <div>
+            <img class="w-12 md:w-14" alt="aplikasi cepat" src="static/images/bf2-icon.svg">
+            <h3 class="font-semibold text-h3-mobile lg:text-h3-desktop my-2 font-sans text-title">
+              Proses Cepat
+            </h3>
+            <p class="text-p-mobile md:text-p-desktop text-grey-th font-sans">
+              Tidak perlu proses yang rumit dan memakan waktu. Dalam hitungan hari bahkan jam, Anda sudah bisa
+              menggunakan Aplikasi eHealth.co.id.
+            </p>
+          </div>
+        </div>
+        <div
+          class="item-card bg-white rounded-2xl p-7 gap-y-7 flex flex-col shadow-lg delay-[200ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0"
+          data-taos-offset="100">
+          <div>
+            <img class="w-12 md:w-14" alt="aplikasi lengkap" src="static/images/bf1-icon.svg">
+            <h3 class="font-semibold text-h3-mobile lg:text-h3-desktop my-2 font-sans text-title">
+              Lengkap
+            </h3>
+            <p class="text-p-mobile md:text-p-desktop text-grey-th font-sans">
+              Integrasi menyeluruh dari administrasi, rekam medis, apotek, hingga manajemen klinik dalam satu aplikasi
+              yang mempercepat kolaborasi dan pertukaran data.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Section -->
+  <section class="w-screen lg:px-28 md:px-20 2xl:px-80 items-center relative py-20">
+    <div class=" flex flex-col md:flex-row justify-between bg-primary rounded-3xl overflow-hidden mx-5 md:mx-0">
+      <img src="static/images/bg-deco.svg" alt="Background Decoration"
+        class="absolute inset-0 w-full h-1/2 object-contain z-0">
+      <div
+        class="flex flex-col md:w-2/5 text-center md:text-left mx-5 md:mx-20 justify-center gap-y-4 py-6 z-10 md:py-10">
+        <h2 class="font-sans text-h2-mobile lg:text-h2-desktop font-bold text-white pt-4 md:pt-0">Fitur Unggulan
+          eHealth.co.id</h2>
+        <p class="font-sans text-p-mobile lg:text-p-desktop text-white">Aplikasi klinik eHealth.co.id dirancang agar
+          mudah dipahami dan digunakan oleh siapa pun tanpa perlu pelatihan khusus.</p>
+        <a href="/fitur/"
+          class="w-fit px-6 py-2 mt-2 glass-button bg-white bg-opacity-20 backdrop-blur-xs border border-white border-opacity-40 rounded-full text-white font-semibold text-center text-p-mobile lg:text-p-desktop font-sans shadow-lg mx-auto md:mx-0 hover:bg-opacity-25">Lihat
+          Selengkapnya</a>
+      </div>
+      <div class="flex flex-col items-end md:w-3/5 pt-4 md:pt-0">
+        <img src="static/images/feat-img.png" class="w-full h-full object-cover" alt="fitur aplikasi eHealth">
+      </div>
+    </div>
+    <div class="overflow-x-auto overflow-y-hidden ml-5 pr-5 md:ml-0 md:pr-0">
+      <div class="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 justify-between gap-8 mt-8">
+        <div
+          class="flex flex-col min-w-[340px] sm:min-w-0 delay-[0ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0">
+          <div class="bg-white-bg rounded-2xl shadow-lg overflow-hidden">
+            <img class="w-full" alt="fitur reservasi" src="static/images/reservasi.png">
+          </div>
+          <a href="https://ehealth.co.id/fitur/layanan-pasien/"
+            class="pt-4 font-semibold text-h3-mobile lg:text-h3-desktop my-1 font-sans text-title">Reservasi</a>
+          <p class="text-p-mobile lg:text-p-desktop text-grey-th font-sans">
+            Pencarian data pasien lebih cepat sehingga kinerja admin lebih efisien.
+          </p>
+        </div>
+        <div
+          class="flex flex-col min-w-[340px] sm:min-w-0 delay-[100ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0">
+          <div class="bg-white-bg rounded-2xl shadow-lg overflow-hidden">
+            <img class="w-full" alt="fitur rekam medis" src="static/images/rekam-medis.png">
+          </div>
+          <a href="https://ehealth.co.id/fitur/operasional-harian/rekam-medis-elektronik/"
+            class="pt-4 font-semibold text-h3-mobile lg:text-h3-desktop my-1 font-sans text-title">Rekam Medis
+            Elektronik</a>
+          <p class="text-p-mobile lg:text-p-desktop text-grey-th font-sans">
+            Pencatatan rekam medis otomatis sehingga dapat lebih fokus mengoptimalkan pelayanan.
+          </p>
+        </div>
+        <div
+          class="flex flex-col min-w-[340px] sm:min-w-0 delay-[200ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0">
+          <div class="bg-white-bg rounded-2xl shadow-lg overflow-hidden">
+            <img class="w-full" alt="fitur apotek" src="static/images/apotek.png">
+          </div>
+          <a href="https://ehealth.co.id/fitur/operasional-harian/"
+            class="pt-4 font-semibold text-h3-mobile lg:text-h3-desktop my-1 font-sans text-title">Apotek</a>
+          <p class="text-p-mobile lg:text-p-desktop text-grey-th font-sans">
+            Apotek mendapatkan resep dari dokter secara elektronik. Mempercepat pemrosesan dan mengurangi antrian
+            pengambilan obat.
+          </p>
+        </div>
+        <div
+          class="flex flex-col min-w-[340px] sm:min-w-0 delay-[300ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0">
+          <div class="bg-white-bg rounded-2xl shadow-lg overflow-hidden">
+            <img class="w-full" alt="fitur erp" src="static/images/erp.png">
+          </div>
+          <a href="https://ehealth.co.id/fitur/manajemen-bulanan/"
+            class="pt-4 font-semibold text-h3-mobile lg:text-h3-desktop my-1 font-sans text-title">Enterprise Resource
+            Planning (ERP)</a>
+          <p class="text-p-mobile lg:text-p-desktop text-grey-th font-sans">
+            Anda dapat lebih mudah mengelola seluruh bagian klinik dari inventaris hingga keuangan.
+          </p>
+        </div>
+        <div
+          class="flex flex-col min-w-[340px] sm:min-w-0 delay-[400ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0">
+          <div class="bg-white-bg rounded-2xl shadow-lg overflow-hidden">
+            <img class="w-full" alt="fitur cabang" src="static/images/cabang.png">
+          </div>
+          <a href="https://ehealth.co.id/blog/post/strategi-sukses-untuk-klinik-multicabang/"
+            class="pt-4 font-semibold text-h3-mobile lg:text-h3-desktop my-1 font-sans text-title">Pengelolaan Multi
+            Cabang</a>
+          <p class="text-p-mobile lg:text-p-desktop text-grey-th font-sans">
+            Kelola dan tingkatkan visibilitas manajemen cabang klinik Anda dengan dalam satu sistem.
+          </p>
+        </div>
+        <div
+          class="flex flex-col min-w-[340px] sm:min-w-0 delay-[500ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0">
+          <div class="bg-white-bg rounded-2xl shadow-lg overflow-hidden">
+            <img class="w-full" alt="fitur bpjs dan satu sehat" src="static/images/bpjs-satusehat.png">
+          </div>
+          <a href="https://ehealth.co.id/blog/post/tips-memilih-vendor-penyedia-rme-terintegrasi-satusehat/"
+            class="pt-4 font-semibold text-h3-mobile lg:text-h3-desktop my-1 font-sans text-title">Terhubung BPJS dan
+            SATUSEHAT</a>
+          <p class="text-p-mobile lg:text-p-desktop text-grey-th font-sans">
+            Melalui aplikasi klinik ehealth.co.id, data akan otomatis dikirimkan ke BPJS dan SatuSehat tanpa perlu
+            melakukan double-input.
+          </p>
+        </div>
+        <div class="flex flex-col min-w-[1px] md:hidden">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guide Section -->
+  <section class="w-screen lg:px-28 md:px-20 2xl:px-80 px-5 items-center relative py-20">
+    <img src="static/images/blob-deco.png" alt="Background Decoration"
+      class="absolute inset-y-0 left-1/2 md:left-auto md:right-0 w-full md:w-2/3 h-full object-cover md:object-contain transform -translate-x-1/2 md:translate-x-0 -z-0">
+    <div class="flex flex-col gap-y-10 md:flex-row justify-between z-10 gap-x-20">
+      <div class="flex flex-col md:w-2/4 lg:w-3/6 text-center md:text-left">
+        <h2 class="font-sans text-h2-mobile lg:text-h2-desktop font-bold text-title mb-5">
+          Mulai Gunakan Aplikasi Klinik eHealth.co.id Hanya dalam <span class="text-primary font-sans">4 Langkah
+            Mudah!</span></h2>
+        <img src="static/images/guide-img.png" class="w-full h-full object-contain z-10"
+          alt="langkah menggunakan aplikasi ehealth">
+      </div>
+      <div class="flex flex-col items-end md:w-2/4 lg:w-2/4 z-10 gap-y-4">
+        <div
+          class="item-card bg-white rounded-xl py-4 px-2 flex flex-row shadow-lg gap-x-2 border-t-2 border-primary w-full">
+          <div class="flex w-1/5 justify-center items-center">
+            <div class="flex rounded-full bg-primary-bg w-10 md:w-12 h-10 md:h-12 items-center justify-center">
+              <span class="text-primary font-bold text-h3-desktop">1</span>
+            </div>
+          </div>
+          <div class="w-full">
+            <h3 class="font-semibold text-h3-mobile lg:text-h3-desktop font-sans text-title">
+              Buat Janji Temu
+            </h3>
+            <p class="text-p-mobile lg:text-p-desktop text-grey-th font-sans">
+              Agendakan demo bersama kami dan konsultasikan segala kebutuhan Anda.
+            </p>
+          </div>
+        </div>
+        <div
+          class="item-card bg-white rounded-xl py-4 px-2 flex flex-row shadow-lg gap-x-2 border-t-2 border-primary w-full">
+          <div class="flex w-1/5 justify-center items-center">
+            <div class="flex rounded-full bg-primary-bg w-10 md:w-12 h-10 md:h-12 items-center justify-center">
+              <span class="text-primary font-bold text-h3-desktop">2</span>
+            </div>
+          </div>
+          <div class="w-full">
+            <h3 class="font-semibold text-h3-mobile lg:text-h3-desktop font-sans text-title">
+              Mengisi Form
+            </h3>
+            <p class="text-p-mobile lg:text-p-desktop text-grey-th font-sans">
+              Persiapkan sistem sesuai kebutuhan klinik Anda untuk diterapkan pada eHealth.co.id.
+            </p>
+          </div>
+        </div>
+        <div
+          class="item-card bg-white rounded-xl py-4 px-2 flex flex-row shadow-lg gap-x-2 border-t-2 border-primary w-full">
+          <div class="flex w-1/5 justify-center items-center">
+            <div class="flex rounded-full bg-primary-bg w-10 md:w-12 h-10 md:h-12 items-center justify-center">
+              <span class="text-primary font-bold text-h3-desktop">3</span>
+            </div>
+          </div>
+          <div class="w-full">
+            <h3 class="font-semibold text-h3-mobile lg:text-h3-desktop font-sans text-title">
+              Pelatihan
+            </h3>
+            <p class="text-p-mobile lg:text-p-desktop text-grey-th font-sans">
+              Pelatihan penggunaan sistem eHealth.co.id bersama dengan tim kami.
+            </p>
+          </div>
+        </div>
+        <div
+          class="item-card bg-white rounded-xl py-4 px-2 flex flex-row shadow-lg gap-x-2 border-t-2 border-primary w-full">
+          <div class="flex w-1/5 justify-center items-center">
+            <div class="flex rounded-full bg-primary-bg w-10 md:w-12 h-10 md:h-12 items-center justify-center">
+              <span class="text-primary font-bold text-h3-desktop">4</span>
+            </div>
+          </div>
+          <div class="w-full">
+            <h3 class="font-semibold text-h3-mobile lg:text-h3-desktop font-sans text-title">
+              Siap Digunakan
+            </h3>
+            <p class="text-p-mobile lg:text-p-desktop text-grey-th font-sans w-full">
+              Sistem eHealth.co.id siap digunakan
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col lg:flex-row gap-x-6 gap-y-3 justify-center my-10 w-full mx-auto">
+      <a href="/mulai-sekarang/"
+        class="w-full lg:w-fit px-6 py-2 bg-gradient-custom rounded-full font-sans font-semibold text-base text-white text-center z-10 shadow-md shadow-secondary-bg hover:shadow-lg hover:shadow-secondary-bg">Buat
+        Janji Temu</a>
+      <a href="https://api.whatsapp.com/send/?phone=622150858844&text=Halo%2C%0Akami+tertarik+untuk+mencoba+demo+ehealth.co.id.%0Aterima+kasih%0A%0Akode+kupon%3A+%231081290299.1697104527%23&type=phone_number&app_absent=0"
+        class="w-full lg:w-fit px-6 py-2 border-secondary border rounded-full text-secondary font-semibold text-center text-base font-sans z-10 bg-secondary bg-opacity-0 hover:bg-opacity-25">Coba
+        Gratis</a>
+    </div>
+  </section>
+
+  <!-- Guarantee Section -->
+  <section class="w-screen pt-20 lg:px-28 md:px-20 2xl:px-80 px-5 bg-primary items-center relative">
+    <img src="static/images/bg-deco.svg" alt="Background Decoration"
+      class="absolute inset-0 w-full h-full object-cover -z-0">
+    <div class="z-10 flex flex-col md:flex-row justify-between">
+      <div class="flex flex-col z-10 gap-y-4 items-start py-2">
+        <h2
+          class="font-sans text-h2-mobile md:text-h2-desktop font-bold text-white md:pt-0 text-center md:text-left mb-8">
+          Jaminan Bersama Aplikasi
+          Klinik eHealth.co.id</h2>
+        <div
+          class="item-card bg-transparent rounded-xl flex flex-row w-full gap-x-6 delay-[0ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0">
+          <div class="flex w-fit items-center">
+            <img class="w-8 md:w-11" alt="jaminan penggunaan aplikasi ehealth" src="static/images/checklist-icon.png">
+          </div>
+          <div class="w-full">
+            <h3 class="font-semibold text-h3-mobile lg:text-h3-desktop font-sans text-white">
+              Integrasi SATUSEHAT
+            </h3>
+            <p class="text-p-mobile md:text-p-desktop text-white font-sans">
+              Kami membantu Anda hingga dapat terhubung dengan SatuSehat.
+            </p>
+          </div>
+        </div>
+        <hr
+          class="border-t-2 border-white-icon w-full delay-[50ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0">
+        <div
+          class="item-card bg-transparent rounded-xl  flex flex-row w-full gap-x-6 delay-[100ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0">
+          <div class="flex w-fit items-center">
+            <img class="w-8 md:w-11" alt="logo eHealth.co.id" src="static/images/checklist-icon.png">
+          </div>
+          <div class="w-full">
+            <h3 class="font-semibold text-h3-mobile lg:text-h3-desktop font-sans text-white">
+              Layanan Pelanggan
+            </h3>
+            <p class="text-p-mobile md:text-p-desktop text-white font-sans">
+              Kami siap membantu Anda dalam setiap langkah penggunaan sistem ehealth.co.id.
+            </p>
+          </div>
+        </div>
+        <hr
+          class="border-t-2 border-white-icon w-full delay-[150ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0">
+        <div
+          class="item-card bg-transparent rounded-xl  flex flex-row  w-full gap-x-6 delay-[200ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0">
+          <div class="flex w-fit items-center">
+            <img class="w-8 md:w-11" alt="logo eHealth.co.id" src="static/images/checklist-icon.png">
+          </div>
+          <div class="w-full">
+            <h3 class="font-semibold text-h3-mobile lg:text-h3-desktop font-sans text-white">
+              Keamanan Data
+            </h3>
+            <p class="text-p-mobile md:text-p-desktop text-white font-sans">
+              Sistem eHealth.co.id menerapkan standar kemanan data internasional yang sudah teruji.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="static/images/cta-img.png" class="w-full h-full object-cover" alt="Hero Image">
+      </div>
+    </div>
+  </section>
+  <div
+    class="w-screen lg:px-28 md:px-20 2xl:px-80 px-5 bg-custom-gradient py-6 flex flex-col md:flex-row justify-between gap-y-4 items-center">
+    <div class="flex flex-col">
+      <h3 class=" font-sans text-h3-mobile md:text-h3-desktop font-bold text-white md:pt-0 text-center md:text-left">
+        Agendakan konsultasi dengan kami mengenai kebutuhan klinik Anda!</h3>
+    </div>
+    <div class="flex flex-col">
+      <a href="/mulai-sekarang/" id="konsultasi-link"
+        class="w-fit px-6 my-4 py-2 bg-gradient-custom rounded-full text-white font-semibold text-center text-p-mobile lg:text-p-desktop font-sans mx-auto md:mx-0 shadow-md shadow-secondary-bg hover:shadow-lg hover:shadow-secondary-bg">Hubungi
+        Kami</a>
+    </div>
+  </div>
+
+  <!-- Distribution Section -->
+  <section class="relative w-screen py-20 lg:px-28 md:px-20 2xl:px-80 items-center justify-center">
+    <h2
+      class="mx-auto mb-10 px-5 text-center font-sans font-bold text-title text-h2-mobile lg:text-h2-desktop md:w-3/5">
+      Persebaran <span class="text-primary font-sans">eHealth.co.id</span>
+    </h2>
+    <img src="static/images/peta.png" class="w-full h-full object-contain" alt="peta persebaran ehealth">
+    <div class="w-full py-8 bg-cover md:bg-contain"
+      style="background-image: url('static/images/blob-deco.png'); background-repeat: no-repeat; background-position: center;">
+      <div
+        class="relative mx-auto m-2 p-4 w-fit grid grid-cols-2 bg-white shadow-lg shadow-primary-bg rounded-xl md:grid-cols-4 md:divide-x md:divide-line-border mt-8">
+        <div class="flex flex-col items-center justify-center p-4 md:py-0 border-r">
+          <h3 class="text-primary font-sans font-bold text-h2-desktop">200+</h3>
+          <p class="text-grey-th font-sans text-p-mobile lg:text-p-desktop">Faskes</p>
+        </div>
+        <div class="flex flex-col items-center justify-center p-4 md:py-0 border-b md:border-b-0">
+          <h3 class="text-primary font-sans font-bold">1.000+</h3>
+          <p class="text-grey-th font-sans text-p-mobile lg:text-p-desktop">Dokter</p>
+        </div>
+        <div class="flex flex-col items-center justify-center p-4 md:py-0 border-t md:border-t-0">
+          <h3 class="text-primary font-sans font-bold">2.700.000+</h3>
+          <p class="text-grey-th font-sans text-center text-p-mobile lg:text-p-desktop">Rekam Medis Pasien</p>
+        </div>
+        <div class="flex flex-col items-center justify-center p-4 md:py-0 border-l">
+          <h3 class="text-primary font-sans font-bold">1.700+</h3>
+          <p class="text-grey-th font-sans text-p-mobile lg:text-p-desktop">Pengguna</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial & Partner Section -->
+  <section class="w-screen lg:px-28 md:px-20 2xl:px-80 px-5 flex items-center relative py-20">
+    <img src="static/images/blob-deco.png" alt="Background Decoration"
+      class="absolute inset-y-0 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -z-0">
+    <div class="z-10 grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2">
+      <ul>
+        <li class="relative">
+          <img src="static/images/quote-deco.svg" alt="Quote Decoration"
+            class="absolute object-contain w-10 z-0 -top-5 -left-2 md:w-20 md:-left-8">
+          <h2
+            class="font-sans text-h2-mobile md:text-h2-desktop font-bold text-title text-center md:text-left mb-10 mx-auto md:pt-4">
+            Mengapa Mereka Memilih Kami?
+          </h2>
+        </li>
+        <li>
+          <div
+            class="gap-y-7 flex flex-col bg-white rounded-xl p-6 shadow-md border-t-2 border-primary delay-[0ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0">
+            <div>
+              <span class="text-p-mobile lg:text-p-desktop text-grey-th font-sans">
+                Sebelum menggunakan eHealth kami kesulitan dalam pencarian data rekam medis pasien dan harus
+                mendaftarkan ulang setiap ada pasien datang walaupun pasien tersebut sering periksa di klinik kami.
+                Awal tertarik menggunakan eHealth karena eHealth
+                <strong>menjadi solusi dari permasalahan yang sering kami alami dari sistem
+                  sebelumnya</strong> yang tidak dapat menyimpan data rekam medis pasien.
+                <br><br>
+                <span class="hidden-text hidden md:block">
+                  eHealth membantu kami karena <strong class="font-bold">sistem digital eHealth dapat dikustom sesuai
+                    dengan kebutuhan klinik, tim teknis stand by membantu jika terjadi kendala dan biaya berlanggannya
+                    terjangkau.</strong>
+                </span>
+              </span>
+              <button onclick="toggleText()"
+                class="text-primary text-p-mobile lg:text-p-desktop mt-2 md:hidden">Selengkapnya</button>
+            </div>
+            <div class="flex flex-row gap-x-4 mt-4">
+              <div class="flex items-center space-x-4">
+                <div class="flex rounded-full items-center justify-center">
+                  <img class="w-10 md:w-12 h-10 md:h-12" alt="Neneng" src="static/images/testimoni1.png">
+                </div>
+                <div class="flex-auto">
+                  <div class="text-base font-semibold text-primary">Neneng</div>
+                  <div class="mt-0.5 text-p-mobile lg:text-p-desktop text-grey-th font-sans">Bidan Healthway Indonesia
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="space-y-8">
+        <li>
+          <div
+            class="gap-y-7 flex flex-col bg-white rounded-xl p-6 shadow-lg border-t-2 border-primary delay-[100ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0">
+            <div>
+              <span class="text-p-mobile lg:text-p-desktop text-grey-th font-sans">Aku merasa jauh lebih dimudahkan
+                setelah punya sistem eHealth.co.id.
+                <strong>Sistem eHealth bikin klinik kita punya kelebihan karena efisiensi waktu.</strong> Tim eHealth
+                juga tanggap
+                menerima segala masukan dari kita. <strong>Responnya cepat dan tindakannya selalu sesuai ekspektasi
+                  kita,</strong>
+                bahkan lebih.
+              </span>
+            </div>
+            <div class="flex flex-row gap-x-4">
+              <div class="flex items-center space-x-4">
+                <div class="flex rounded-full items-center justify-center">
+                  <img class="w-10 md:w-12 h-10 md:h-12" alt="Shelly" src="static/images/testimoni3.png">
+                </div>
+                <div class="flex-auto">
+                  <div class="text-base font-semibold text-primary">Shelly</div>
+                  <div class="mt-0.5 text-p-mobile lg:text-p-desktop text-grey-th font-sans">Admin Jakarta Swab Centre
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div
+            class="gap-y-7 flex flex-col bg-white rounded-xl p-6 shadow-lg border-t-2 border-primary delay-[200ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0">
+            <div>
+              <span class="text-p-mobile lg:text-p-desktop text-grey-th font-sans">Sistem eHealth tidak semata-mata
+                hanya mendigitalisasi Rekam Medis,
+                tetapi <strong>memiliki banyak fitur yang dapat kami gunakan untuk menganalisa bisnis klinik
+                  kami.</strong> Yang
+                membedakan dengan kompetitor lainnya saat ini, <strong>mampu mengakomodir kebutuhan kami dimana
+                  pengadaan
+                  semua logistik klinik cabang tersentralisasi di Pusat.</strong> Mantab Ehealth
+              </span>
+            </div>
+            <div class="flex flex-row gap-x-4">
+              <div class="flex items-center space-x-4">
+                <div class="flex rounded-full items-center justify-center">
+                  <img class="w-10 md:w-12 h-10 md:h-12" alt="dr. Yani" src="static/images/testimoni2.png">
+                </div>
+                <div class="flex-auto">
+                  <div class="text-base font-semibold text-primary">dr. Yani</div>
+                  <div class="mt-0.5 text-p-mobile lg:text-p-desktop text-grey-th font-sans">Klinik Westerindo
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class="w-screen flex justify-center items-center relative mt-10 mx-auto">
+    <div class="relative">
+      <img class="w-full md:px-20 px-5" alt="Customer testimonial thumbnail" src="static/images/thumbnail.png">
+      <button type="button" class="absolute inset-0 flex items-center justify-center btn-play"
+        data-youtube-id="f-likb_tE04" aria-label="Play Testimonial Video">
+        <i class="fa fa-play fa-4x text-white" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- carousel -->
+  <div
+    class="py-16 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+    <ul
+      class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+      <li>
+        <img src="static/images/klinikUI.svg" alt="Facebook" class="w-20 md:w-28" />
+      </li>
+      <li>
+        <img src="static/images/klinikNamsan.png" alt="Disney" class="w-20 md:w-28" />
+      </li>
+      <li>
+        <img src="static/images/klinikPuspa.png" alt="Airbnb" class="w-20 md:w-28" />
+      </li>
+      <li>
+        <img src="static/images/klinikJsc.png" alt="Apple" class="w-20 md:w-28" />
+      </li>
+      <li>
+        <img src="static/images/klinikHnh.png" alt="Spark" class="w-20 md:w-28" />
+      </li>
+      <li>
+        <img src="static/images/klinikBidandwi.png" alt="Samsung" class="w-20 md:w-28" />
+      </li>
+      <li>
+        <img src="static/images/klinikAgatha.png" alt="Quora" class="w-20 md:w-28" />
+      </li>
+      <li>
+        <img src="static/images/klinikSwifttestid.png" alt="Sass" class="w-20 md:w-28" />
+      </li>
+      <li>
+        <img src="static/images/klinikQita.svg" alt="Sass" class="w-20 md:w-28" />
+      </li>
+    </ul>
+    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+      aria-hidden="true">
+      <li>
+        <img src="static/images/klinikUI.svg" alt="Facebook" class="w-20 md:w-28" />
+      </li>
+      <li>
+        <img src="static/images/klinikNamsan.png" alt="Disney" class="w-20 md:w-28" />
+      </li>
+      <li>
+        <img src="static/images/klinikPuspa.png" alt="Airbnb" class="w-20 md:w-28" />
+      </li>
+      <li>
+        <img src="static/images/klinikJsc.png" alt="Apple" class="w-20 md:w-28" />
+      </li>
+      <li>
+        <img src="static/images/klinikHnh.png" alt="Spark" class="w-20 md:w-28" />
+      </li>
+      <li>
+        <img src="static/images/klinikBidandwi.png" alt="Samsung" class="w-20 md:w-28" />
+      </li>
+      <li>
+        <img src="static/images/klinikAgatha.png" alt="Quora" class="w-20 md:w-28" />
+      </li>
+      <li>
+        <img src="static/images/klinikSwifttestid.png" alt="Sass" class="w-20 md:w-28" />
+      </li>
+      <li>
+        <img src="static/images/klinikQita.svg" alt="Sass" class="w-20 md:w-28" />
+      </li>
+    </ul>
+  </div>
+
+  <!-- FAQ Section -->
+  <section
+    class="w-screen flex flex-col items-center md:flex-row justify-center py-20 lg:px-28 md:px-20 2xl:px-80 px-5 md:items-start ">
+    <div class="flex flex-col md:w-2/5">
+      <h2 class="font-sans text-h2-mobile md:text-h2-desktop text-center md:text-left font-bold text-title">Frequently
+        Asked Questions</h2>
+      <a href="/mulai-sekarang/"
+        class="w-fit px-6 my-4 py-2 border-secondary border rounded-full text-secondary font-semibold text-center text-p-mobile lg:text-p-desktop font-sans mx-auto md:mx-0 bg-secondary bg-opacity-0 hover:bg-opacity-25">Lihat
+        Selengkapnya</a>
+    </div>
+    <div id="faq-container" class="flex flex-col justify-start items-center gap-y-4 md:w-3/5">
+      <div class="flex flex-col w-full justify-center bg-white p-4 rounded-lg drop-shadow-md">
+        <div class="flex flex-row justify-between items-center gap-x-4 md:gap-x-20">
+          <p class="font-sans font-bold text-title">Apakah saya bisa trial sistem terlebih dahulu sebelum live
+            menggunakan ehealth.co.id?</p>
+          <button onclick='toggleAccordion(0)' id="toggle-button-0" class="focus:outline-none text-grey-th">▲</button>
+        </div>
+        <div class="answer flex" id="content-0">
+          <p class="border-t-2 pt-2 my-2 text-p-mobile lg:text-p-desktop text-grey-th font-sans">Kami sangat senang
+            apabila Anda tertarik untuk trial dengan ehealth.co.id.
+            Anda bisa mulai berlangganan saat Anda telah mendapatkan manfaat dengan menggunakan layanan kami.</p>
+        </div>
+      </div>
+      <div class="flex flex-col w-full justify-center bg-white p-4 rounded-lg drop-shadow-md">
+        <div class="flex flex-row justify-between items-center gap-x-4 md:gap-x-20">
+          <p class="font-sans font-bold text-title">Berapa lama saya bisa mendapatkan Trial?</p>
+          <button onclick='toggleAccordion(1)' id="toggle-button-1" class="focus:outline-none text-grey-th">▼</button>
+        </div>
+        <div class="answer hidden" id="content-1">
+          <p class="border-t-2 pt-2 my-2 text-p-mobile lg:text-p-desktop text-grey-th font-sans">Masa trial berlangsung
+            selama 14 hari, hal ini berdasarkan pengalaman kami
+            pada klinik-klinik yang sebelumnya pernah trial. Namun, apabila 14 hari tidak cukup, Anda perlu
+            mengkonfirmasi ke kami dulu melakukan perpanjangan masa trial.</p>
+        </div>
+      </div>
+      <div class="flex flex-col w-full justify-center bg-white p-4 rounded-lg drop-shadow-md">
+        <div class="flex flex-row justify-between items-center gap-x-4 md:gap-x-20">
+          <p class="font-sans font-bold text-title">Apakah saya bisa melakukan trial sebelum demo meeting online/offline
+            dengan tim
+            ehealth.co.id?</p>
+          <button onclick='toggleAccordion(2)' id="toggle-button-2" class="focus:outline-none text-grey-th">▼</button>
+        </div>
+        <div class="answer hidden" id="content-2">
+          <p class="border-t-2 pt-2 my-2 text-p-mobile lg:text-p-desktop text-grey-th font-sans">Mohon maaf tidak bisa.
+            Meskipun klinik yang melakukan trial akan dibekali
+            dengan manual book sistem penggunaan ehealth.co.id, demo meeting perlu dilakukan terlebih dahulu sebelum
+            trial.</p>
+        </div>
+      </div>
+      <div class="flex flex-col w-full justify-center bg-white p-4 rounded-lg drop-shadow-md">
+        <div class="flex flex-row justify-between items-center gap-x-4 md:gap-x-20">
+          <p class="font-sans font-bold text-title">Berapa biaya yang harus saya keluarkan apabila saya ingin mencoba
+            dulu?</p>
+          <button onclick='toggleAccordion(3)' id="toggle-button-3" class="focus:outline-none text-grey-th">▼</button>
+        </div>
+        <div class="answer hidden" id="content-3">
+          <p class="border-t-2 pt-2 my-2 text-p-mobile lg:text-p-desktop text-grey-th font-sans">Tidak ada biaya yang
+            dikeluarkan untuk trial. Anda akan mendapatkan akun dan
+            layanan secara gratis dari kami.</p>
+        </div>
+      </div>
+      <div class="flex flex-col w-full justify-center bg-white p-4 rounded-lg drop-shadow-md">
+        <div class="flex flex-row justify-between items-center gap-x-4 md:gap-x-20">
+          <p class="font-sans font-bold text-title">Berapa harga yang harus saya bayar apabila saya ingin menggunakan
+            ehealth.co.id?</p>
+          <button onclick='toggleAccordion(4)' id="toggle-button-4" class="focus:outline-none text-grey-th">▼</button>
+        </div>
+        <div class="answer hidden" id="content-4">
+          <p class="border-t-2 pt-2 my-2 text-p-mobile lg:text-p-desktop text-grey-th font-sans">Sistem pembayaran
+            ehealth.co.id berbentuk langganan yang dibayarkan setiap
+            bulan yaitu sebesar Rp250.000/dokter/bulan. Besarnya biaya yang dibayarkan sesuai dengan jumlah dokter yang
+            dimiliki klinik atau rumah sakit Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <img src="static/images/footer-img.png" class="w-full h-full object-contain" alt="Hero Image">
+
+  <!-- Footer Section -->
+  <footer class="w-screen py-20 lg:px-28 md:px-20 2xl:px-80 px-5 bg-primary items-center relative">
+    <img src="static/images/bg-deco.svg" alt="Background Decoration"
+      class="absolute inset-0 w-full h-full object-cover z-0">
+    <div class="flex flex-col md:flex-row justify-between gap-y-8">
+      <div class="flex flex-col md:w-1/4 z-10">
+        <a href="/">
+          <img class="w-40 md:w-52" alt="logo eHealth.co.id" src="static/images/Logo-eH.svg">
+        </a>
+        <p class="font-sans text-white mt-2 text-p-mobile lg:text-p-desktop">
+          &copy; 2024 eHealth.co.id
+        </p>
+      </div>
+      <div class="flex flex-row md:w-2/4 justify-between md:justify-around z-10">
+        <div class="flex flex-col">
+          <h2 class="font-semibold text-slate-900 dark:text-slate-100">Navigation</h2>
+          <ul class="mt-4 space-y-2 list-none">
+            <li><a class="font-sans text-white font-semibold text-sm hover:text-secondary" href="/fitur/"> Fitur </a>
+            </li>
+            <li><a class="font-sans text-white font-semibold text-sm hover:text-secondary" href="/harga/"> Harga </a>
+            </li>
+            <li><a class="font-sans text-white font-semibold text-sm hover:text-secondary" href="/blog/"> Blog </a></li>
+            <li><a class="font-sans text-white font-semibold text-xs hover:text-secondary" href="/faq/"> FAQ </a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col">
+          <h2 class="font-semibold text-slate-900 dark:text-slate-100">Contact Us</h2>
+          <ul class="mt-4 space-y-2 list-none">
+            <li>
+              <a href="https://wa.me/622150858844" target="_blank" class="flex items-center text-white">
+                <img class="w-4 mr-4" src="static/images/whatsapp.svg" alt="Icon whatsapp">
+                (021) 50858844
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ehealth_indonesia/" target="_blank"
+                class="flex items-center text-white">
+                <img class="w-4 mr-4" src="static/images/instagram.svg" alt="Icon instagram">
+                ehealth_indonesia
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/ehealth.co.id/" target="_blank" class="flex items-center text-white">
+                <img class="w-4 mr-4" src="static/images/facebook.svg" alt="Icon facebook">
+                Ehealth Indonesia
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@ehealth.co.id" target="_blank" class="flex items-center text-white">
+                <img class="w-4 mr-4" src="static/images/email.svg" alt="Icon email">
+                info@ehealth.co.id
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col md:w-1/4 z-10">
+        <h2 class="font-semibold text-white">Our Location</h2>
+        <ul class="mt-4 space-y-2">
+          <li class="font sans text-white">Wisma monex lantai 9, Jl. Asia Afrika nomor 133-137, Bandung, Jawa Barat
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <div id="card_panel"
+    class="main-modal fixed w-full inset-0 z-50 overflow-hidden flex justify-center items-center hidden"
+    style="background: rgba(0,0,0,.4);">
+    <div class="modal-container bg-white md:w-3/12 sm:w-11/12 md:max-w-11/12 mx-auto rounded-xl z-50 overflow-y-auto">
+      <div class="modal-content py-4 text-left px-6">
+        <div class="flex justify-between items-center pb-3">
+          <p class="text-2xl font-bold text-gray-500 center">Terima kasih</p>
+          <div id="card_close" class="modal-close cursor-pointer z-50">
+            <svg class="fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+              viewBox="0 0 18 18">
+              <path
+                d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+              </path>
+            </svg>
+          </div>
+        </div>
+        <div class="my-5 mr-5 ml-5 text-center">
+          <img class="w-50 lazyload" data-src="/static/images/contact_soon.webp" alt="Contact Soon">
+          <span>Kami akan menghubungi anda segera.</span>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Video Modal Section -->
+  <div class="video-modal fixed inset-0 hidden justify-center items-center z-30">
+    <div class="overlay fixed inset-0 bg-gray-900 opacity-50"></div>
+    <div id="video_card_panel" class="video-modal-content bg-white rounded-lg shadow-lg relative z-40 w-fit">
+      <iframe id="youtube" class="w-full" frameborder="0" allow="autoplay" allowfullscreen src=""></iframe>
+      <a href="#" class="close-video-modal absolute top-0 right-0 mt-2 mr-2 bg-white p-2 rounded-full shadow-lg z-50">
+        <svg class="fill-current text-gray-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24"
+          height="24">
+          <path
+            d="M30.3448276,31.4576271 C29.9059965,31.4572473 29.4852797,31.2855701 29.1751724,30.980339 L0.485517241,2.77694915 C-0.122171278,2.13584324 -0.104240278,1.13679247 0.52607603,0.517159487 C1.15639234,-0.102473494 2.17266813,-0.120100579 2.82482759,0.477288136 L31.5144828,28.680678 C31.9872448,29.1460053 32.1285698,29.8453523 31.8726333,30.4529866 C31.6166968,31.0606209 31.0138299,31.4570487 30.3448276,31.4576271 Z" />
+          <path
+            d="M1.65517241,31.4576271 C0.986170142,31.4570487 0.383303157,31.0606209 0.127366673,30.4529866 C-0.12856981,29.8453523 0.0127551942,29.1460053 0.485517241,28.680678 L29.1751724,0.477288136 C29.8273319,-0.120100579 30.8436077,-0.102473494 31.473924,0.517159487 C32.1042403,1.13679247 32.1221713,2.13584324 31.5144828,2.77694915 L2.82482759,30.980339 C2.51472031,31.2855701 2.09400353,31.4572473 1.65517241,31.4576271 Z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('lazybeforeunveil', function (e) {
+      var bg = e.target.getAttribute('data-bg');
+      if (bg) {
+        e.target.style.backgroundImage = 'url(' + bg + ')';
+      }
+    });
+    function toggleAccordion(index) {
+      const contents = document.querySelectorAll('.answer');
+      const buttons = document.querySelectorAll('[id^=toggle-button-]');
+
+      contents.forEach((content, i) => {
+        if (i !== index) {
+          content.classList.add('hidden');
+          content.classList.remove('flex');
+          buttons[i].textContent = '▼';
+        }
+      });
+
+      const content = document.getElementById(`content-${index}`);
+      const button = document.getElementById(`toggle-button-${index}`);
+      const isHidden = content.classList.contains('hidden');
+
+      content.classList.toggle('hidden', !isHidden);
+      content.classList.toggle('flex', isHidden);
+
+      button.textContent = isHidden ? '▲' : '▼';
+    }
+    function toggleText() {
+      const hiddenText = document.querySelector('.hidden-text');
+      const button = event.target;
+      if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
+        hiddenText.style.display = "inline";
+        button.textContent = "Lebih Sedikit";
+      } else {
+        hiddenText.style.display = "none";
+        button.textContent = "Selengkapnya";
+      }
+    }
+    function adjustIframeWidth() {
+      var iframe = document.getElementById('youtube');
+      var deviceWidth = window.innerWidth;
+      console.log(deviceWidth)
+      if (deviceWidth <= 900) {
+        iframe.style.width = deviceWidth + 'px';
+        iframe.style.height = deviceWidth * (9 / 16) + 'px';
+      } else {
+        var widthRatio = 0.8;
+        var newWidth = deviceWidth * widthRatio;
+        iframe.style.width = newWidth + 'px';
+        var aspectRatioHeight = newWidth * (9 / 16);
+        iframe.style.height = aspectRatioHeight + 'px';
+      }
+    }
+    adjustIframeWidth();
+    window.addEventListener('resize', adjustIframeWidth);
+  </script>
+  <script async src="/static/js/lazysizes.min.js"></script>
+  <script defer src="/static/js/pixel.js"></script>
+  <script defer src="/static/js/mixpanel.js"></script>
+  <script defer src="/static/js/jquery-3.5.1.min.js"></script>
+  <script defer src="/static/js/fp.min.js"></script>
+  <script defer src="https://s3-ap-southeast-1.amazonaws.com/qiscus-sdk/public/qismo/qismo-v4.js"></script>
+  <script defer src="/static/js/index.js"></script>
+  <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+</body>
+
+</html>

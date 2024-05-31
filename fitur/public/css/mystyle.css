@@ -1,0 +1,314 @@
+.scale-25 {
+    --tw-scale-x: .25;
+    --tw-scale-y: .25;
+  }
+  .bg-blue-ehealth {
+    --tw-bg-opacity: 1;
+    background-color: rgba(42, 175, 211, var(--tw-bg-opacity));
+  }
+
+  .bg-blue-ehealth-button {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 241, 249, var(--tw-bg-opacity));
+  }
+
+  .bg-blue-ehealth-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 241, 249, var(--tw-bg-opacity));
+  }
+
+  .bg-blue-ehealth-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(168, 225, 241, var(--tw-bg-opacity));
+  }
+
+  .bg-blue-ehealth-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(25, 142, 179, var(--tw-bg-opacity));
+  }
+
+  .bg-blue-ehealth-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(13, 101, 135, var(--tw-bg-opacity));
+  }
+
+  .bg-blue-ehealth-hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(140, 226, 250, var(--tw-bg-opacity));
+  }
+
+  .bg-scale-mobile {
+    background-size: 75% 50%;
+  }
+
+  .border-yellow-ehealth {
+    --tw-border-opacity: 1;
+    border-color: rgba(252, 173, 78, var(--tw-border-opacity));
+  }
+
+  .border-blue-ehealth-600 {
+    --tw-border-opacity: 1;
+    border-color: rgba(25, 142, 179, var(--tw-border-opacity));
+  }
+
+  .border-blue-ehealth-700 {
+    --tw-border-opacity: 1;
+    border-color: rgba(13, 101, 135, var(--tw-border-opacity));
+  }
+
+  .bg-blue-ehealth-placeholder {
+    --tw-bg-opacity: 1;
+    background-color: rgba(183, 222, 232, var(--tw-bg-opacity));
+  }
+  
+  .bg-yellow-ehealth {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 173, 78, var(--tw-bg-opacity));
+  }
+
+  .bg-white-ehealth {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .-ml-22-px {
+    margin-left: -22px;
+  }
+
+  button[type=submit] .loading-indicator {
+    display: none;
+  }
+  button[type=submit] .button-label {
+    display: block;
+  }
+
+  form#subscribe-form.loading {
+    border-color: transparent;
+  }
+  form#subscribe-form.loading button[type=submit] {
+    background-color: #6c757d;
+    color: white;
+  }
+  form#subscribe-form.loading button[type=submit] .loading-indicator {
+    display: block;
+  }
+  form#subscribe-form.loading button[type=submit] .button-label {
+    display: none;
+  }
+
+  @media (min-width: 768px) {    
+    .md\:text-5xl-ehealth {
+    font-size: 3rem;
+    line-height: 1.2;
+    }
+
+    .md\:text-xl-ehealth {
+      font-size: 1.25rem;
+      line-height: 2rem;
+      }
+
+    .md\:bg-white-ehealth {
+      --tw-bg-opacity: 1;
+      background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+    }
+
+    .md\:bg-polygon {
+      background-image: url('../images/Polygon1.svg');
+      background-color: transparent;
+    }
+
+    .md\:bg-polygon-2 {
+      background-image: url('../images/Polygon2.svg');
+      background-color: transparent;
+    }
+    }
+  
+    .bg-scale-mobile {
+      background-size: 100% 25%;
+    }
+    .text-blue-ehealth {
+      --tw-text-opacity: 1;
+      color: rgba(42, 175, 211, var(--tw-text-opacity));
+    }
+    .text-blue-ehealth-600 {
+      --tw-text-opacity: 1;
+      color: rgba(25, 142, 179, var(--tw-text-opacity));
+    }
+    .text-blue-ehealth-700 {
+      --tw-text-opacity: 1;
+      color: rgba(13, 101, 135, var(--tw-bg-opacity));
+    }
+
+    @media (min-width: 640px) {
+      .sm\:bg-scale-mobile {
+        background-size: 100% 25%;
+      }
+    }
+  
+  .js-trigger-video-modal {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .js-trigger-video-modal i {
+    font-size: 30px;
+    width: 100%;
+    transform: translate(4.666%, -6.66%);
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  
+  .js-trigger-video-modal:hover {
+    box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2),
+    0px 7px 10px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+  }
+
+/* Video Modal
+-----------------------------------------*/
+.video-modal,
+.video-modal .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3000;
+}
+.video-modal {
+	overflow: hidden;
+	position: fixed;
+	opacity: 0.0;
+
+  -webkit-transform: translate(500%,0%);
+  transform: translate(500%,0%);
+
+  -webkit-transition: -webkit-transform 0s linear 0s;
+  transition: transform 0s linear 0s;
+
+
+  /* using flexbox for vertical centering */
+
+  /* Flexbox display */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+
+  /* Vertical alignment */
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.video-modal .overlay {
+  z-index: 0;
+  background: rgba(0,0,0,.4); /* overlay color */
+
+  opacity: 0.0;
+
+  -webkit-transition: opacity 0.2s ease-out 0.05s;
+  transition: opacity 0.2s ease-out 0.05s;
+}
+
+
+.video-modal-content {
+	position: relative;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	z-index: 1;
+  
+	margin: 0 auto;
+
+	overflow-y: visible;
+
+	background: #000;
+  
+  width: calc(100% - 12em);
+  height: 0;
+  padding-top: calc((100% - 12em) * 0.5625); /* 16:9 calc */
+}
+
+/* Scaling to fit within the current Viewport size:
+   When viewport aspect ratio is greater than 16:9
+   work off the height instead of the width for calc */
+ @media (min-aspect-ratio: 16/9) {
+  .video-modal-content {
+    width: 0;
+    height: calc(100vh - 10em);
+    padding-top: 0;
+    padding-left: calc((100vh - 10em) * 1.7778); /* 16:9 calc */
+  }
+}
+
+/* Mobile Layout Tweaks - side margins reduced */
+@media (max-width: 640px) {
+	.video-modal-content {
+		width: calc(100% - 1em);
+    padding-top: calc((100% - 1em) * 0.5625); /* 16:9 calc */
+	}
+}
+
+/* modal close button */
+.close-video-modal {
+	display: block;
+    position: absolute;
+    left: 0;
+    top: -40px;
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* set the iframe element to stretch to fit its parent element */
+iframe#youtube {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+
+	background: #000;
+	box-shadow: 0px 2px 16px rgba(0,0,0,0.5);
+}
+
+/* show the modal: 
+   add class to the body to reveal */
+.show-video-modal .video-modal {
+	opacity: 1.0;
+
+	transform: translate(0%,0%);
+	-webkit-transform: translate(0%,0%);
+}
+.show-video-modal .video-modal .overlay {
+	opacity: 1.0;
+}
+.show-video-modal .video-modal-content {
+	transform: translate(0%,0%);
+	-webkit-transform: translate(0%,0%);
+}
+
+/*
+  Drop Shadow for Tentang RME;
+*/
+.rme-drop-shadow{
+  filter: drop-shadow(2px 2px 24px rgba(0, 0, 0, 0.08)) drop-shadow(2px 2px 12px rgba(0, 0, 0, 0.12));
+}

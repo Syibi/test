@@ -1,0 +1,140 @@
+.scale-25 {
+  --tw-scale-x: .25;
+  --tw-scale-y: .25;
+}
+.bg-blue-ehealth {
+  --tw-bg-opacity: 1;
+  background-color: rgba(42, 175, 211, var(--tw-bg-opacity));
+}
+
+.bg-blue-ehealth-button {
+  --tw-bg-opacity: 1;
+  background-color: rgba(209, 241, 249, var(--tw-bg-opacity));
+}
+
+.bg-blue-ehealth-hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(140, 226, 250, var(--tw-bg-opacity));
+}
+
+.bg-scale-mobile {
+  background-size: 75% 50%;
+}
+
+.border-yellow-ehealth {
+  --tw-border-opacity: 1;
+  border-color: rgba(252, 173, 78, var(--tw-border-opacity));
+}
+
+.bg-blue-ehealth-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(25, 142, 179, var(--tw-bg-opacity));
+}
+
+.border-blue-ehealth-700 {
+  --tw-border-opacity: 1;
+  border-color: rgba(13, 101, 135, var(--tw-border-opacity));
+}
+
+.bg-blue-ehealth-placeholder {
+  --tw-bg-opacity: 1;
+  background-color: rgba(183, 222, 232, var(--tw-bg-opacity));
+}
+
+.bg-yellow-ehealth {
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 173, 78, var(--tw-bg-opacity));
+}
+
+.bg-orange-ehealth-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 173, 78, var(--tw-bg-opacity));
+}
+
+.bg-orange-ehealth-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(214, 146, 64, var(--tw-bg-opacity));
+}
+
+.bg-white-ehealth {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.question {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.active, .question:hover {
+  color: #2AAFD3;
+}
+
+.question:after {
+  content: url("../images/dropdown_close_mobile.svg");
+}
+
+.active:after {
+  content: url("../images/dropdown_open_mobile.svg");
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.faq-list-container {
+  height: max-content;
+}
+
+.faq-link-body {
+  color: #2AAFD3;
+}
+
+.faq-link-body::after {
+  margin-left: 4px;
+  font-size: 24px;
+  vertical-align: middle;
+  content: '\279C';
+}
+
+@media (min-width: 768px) {    
+  .md\:text-5xl-ehealth {
+  font-size: 3rem;
+  line-height: 1.2;
+  }
+
+  .md\:text-xl-ehealth {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    }
+
+  .md\:bg-white-ehealth {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+  }
+
+  .bg-scale-mobile {
+    background-size: 100% 25%;
+  }
+  .text-blue-ehealth {
+    --tw-text-opacity: 1;
+    color: rgba(42, 175, 211, var(--tw-text-opacity));
+  }
+
+  .question:after {
+    content: url("../images/dropdown_close.svg");
+  }
+  .active:after {
+    content: url("../images/dropdown_open.svg");
+  }
+
+  @media (min-width: 640px) {
+    .sm\:bg-scale-mobile {
+      background-size: 100% 25%;
+    }
+  }
+

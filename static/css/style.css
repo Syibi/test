@@ -1,0 +1,37 @@
+/* static/css/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this in your main CSS file if needed */
+.glass-button {
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+
+.glassmorphism {
+    background: rgba(42, 175, 211, 0.8); /* Semi-transparent background */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Light border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+@media (min-width: 768px) {
+  .masonry {
+      column-count: 2;
+  }
+  .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .grid-container {
+      display: grid;
+      grid-auto-flow: column;
+      overflow-x: auto;
+      gap: 1rem;
+  }
+}

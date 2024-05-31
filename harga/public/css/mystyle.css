@@ -1,0 +1,258 @@
+.strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 3px solid;
+  border-color: red;
+  
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -ms-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);
+  transform:rotate(-5deg);
+}
+
+.scale-25 {
+  --tw-scale-x: .25;
+  --tw-scale-y: .25;
+}
+.bg-blue-ehealth {
+  --tw-bg-opacity: 1;
+  background-color: rgba(42, 175, 211, var(--tw-bg-opacity));
+}
+
+.bg-blue-ehealth-button {
+  --tw-bg-opacity: 1;
+  background-color: rgba(209, 241, 249, var(--tw-bg-opacity));
+}
+
+.bg-blue-ehealth-hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(140, 226, 250, var(--tw-bg-opacity));
+}
+
+.bg-scale-mobile {
+  background-size: 75% 50%;
+}
+
+.border-yellow-ehealth {
+  --tw-border-opacity: 1;
+  border-color: rgba(252, 173, 78, var(--tw-border-opacity));
+}
+
+.bg-blue-ehealth-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(209, 241, 249, var(--tw-bg-opacity));
+  ;
+}
+
+.bg-blue-ehealth-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(42, 175, 211, var(--tw-bg-opacity));
+}
+
+.bg-blue-ehealth-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(25, 142, 179, var(--tw-bg-opacity));
+}
+
+.bg-blue-ehealth-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(13, 101, 135, var(--tw-bg-opacity));
+}
+
+.bg-tosca-ehealth-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(73, 189, 188, var(--tw-bg-opacity));
+}
+
+.border-blue-ehealth-500 {
+  --tw-border-opacity: 1;
+  border-color: rgba(42, 175, 211, var(--tw-border-opacity));
+}
+
+.border-blue-ehealth-700 {
+  --tw-border-opacity: 1;
+  border-color: rgba(13, 101, 135, var(--tw-border-opacity));
+}
+
+.bg-blue-ehealth-placeholder {
+  --tw-bg-opacity: 1;
+  background-color: rgba(183, 222, 232, var(--tw-bg-opacity));
+}
+
+.bg-yellow-ehealth {
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 173, 78, var(--tw-bg-opacity));
+}
+
+.bg-orange-ehealth-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 173, 78, var(--tw-bg-opacity));
+}
+
+.bg-orange-ehealth-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(214, 146, 64, var(--tw-bg-opacity));
+}
+
+.bg-white-ehealth {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.text-tosca-500-ehealth {
+  --tw-bg-opacity: 1;
+  color: rgba(73, 189, 188, var(--tw-bg-opacity));
+}
+
+.card-title-container {
+  height: 9rem;
+}
+
+.pricing-button-pills > button {
+  outline: none;
+}
+
+.pricing-button-pills > button.active {
+  --tw-bg-opacity: 1;
+  background: rgba(252, 173, 78, var(--tw-bg-opacity));
+  transition: all 0.5s ease-out;
+}
+
+.pricing-button-container > .pricing-button-pills > button.active {
+  --tw-bg-opacity: 1;
+  background: rgba(25, 142, 179, var(--tw-bg-opacity));
+  transition: all 0.5s ease-out;
+}
+
+.pricing-button-pills > button.active > p {
+  color: white;
+}
+
+.card-price-container > ul {
+  list-style-position: outside;
+}
+
+.card-price-container > ul > li {
+  list-style: url('../images/orange_checklist.svg');
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+#individual-price, #individual-duration, #team-price, #team-duration, .discount-price {
+  transition: all 1s ease-out;
+}
+
+.discount-price {
+  display: none;
+  background-color: rgba(254, 221, 181, 1);
+  color: rgba(143, 100, 46, 1);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 2px 4px;
+}
+
+.discount-price-calculator {
+  position: absolute;
+  right: 4px;
+  top: -20px;
+  background-color: rgba(254, 221, 181, 1);
+  color: rgba(143, 100, 46, 1);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 2px 4px;
+}
+
+.featured-accordion-caption {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-out;
+}
+
+.featured-accordion-caption li {
+  list-style: disc;
+}
+
+.featured-accordion-title {
+  transition: 0.4s;
+}
+
+.featured-items {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%; 
+  background-color: rgba(42, 175, 211, 1);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .discount-price-calculator {
+    top: 0px;
+  }
+}
+
+@media (min-width: 768px) {    
+  .md\:text-5xl-ehealth {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .md\:text-xl-ehealth {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+
+  .md\:bg-white-ehealth {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+}
+
+.bg-scale-mobile {
+    background-size: 100% 25%;
+}
+.text-blue-ehealth {
+  --tw-text-opacity: 1;
+  color: rgba(42, 175, 211, var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:bg-scale-mobile {
+    background-size: 100% 25%;
+  }
+}
+

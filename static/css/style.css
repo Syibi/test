@@ -35,31 +35,12 @@
       gap: 1rem;
   }
 }
-/* width */
-::-webkit-scrollbar {
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 8px;
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
 }
 
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #ccc; /* Brighter gray */
-  border-radius: 5px;
-  border: 3px solid #f1f1f1;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #aaa; /* Even brighter gray */
-}
-
-/* For Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #ccc #f1f1f1; /* Brighter colors */
+.answer.open {
+  max-height: 1000px; /* Large value for transition purposes */
 }

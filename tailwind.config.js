@@ -65,7 +65,13 @@ module.exports = {
       boxShadow: {
         'custom': '0 13px 50px rgba(199, 199, 199, 0.5)',
         'card': '0 10px 50px rgba(199, 199, 199, 0.25)',
-      }
+      },
+      transitionProperty: {
+        'max-height': 'max-height',
+      },
+      rotate: {
+        '180': '180deg',
+      },
     },
   },
   plugins: [
